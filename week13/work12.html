@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function (){
+        var color = ['red', 'orange', 'purple'];
+        $('h1').css({color: function(index){
+          return color[index];
+        },backgroundColor: 'black'});
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+  </body>
+</html> 
