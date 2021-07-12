@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function result(){
+        var res = 0;
+        for(var i=1; i < 5; i++){
+          if(eval(document.getElementById("q"+i).innerHTML)==parseInt(document.getElementById("a"+i).value)){
+            document.getElementById("q"+i).style.textDecoration = "none";
+            res += 10;
+          }
+          else{
+            document.getElementById("q"+i).style.textDecoration = "line-through";
+          }
+        }
+        document.getElementById("res").innerHTML = res+"점";
+        if (res == 40){
+          document.getElementById("res").innerHTML += " : 합격하셨습니다."
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>치매 예방 프로그램</h2>
+    <hr>
+    <form>
+      <table style="margin-left: 10px;">
+        <tr>
+          <td id="q1" style="width: 70px;">5*6</td>
+          <td><input id="a1" type="text" size="7"></td>
+        </tr>
+        <tr>
+          <td id="q2">7+5*3</td>
+          <td><input id="a2" type="text" size="7"></td>
+        </tr>
+        <tr>
+          <td id="q3">23*2</td>
+          <td><input id="a3" type="text" size="7"></td>
+        </tr>
+        <tr>
+          <td id="q4">35-7</td>
+          <td><input id="a4" type="text" size="7"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="채점" onclick="result()"></td>
+          <td><span id="res">0 점</span></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

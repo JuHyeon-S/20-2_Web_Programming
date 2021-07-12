@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        height: 100%;
+        background-color: white;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        border-top:0;
+      }
+      table caption{
+        color: red;
+        font-size: 25px;
+      }
+      thead{
+        background-color: green;
+        color: white;
+        border: 0;
+      }
+      tr{
+        height: 35px;
+      }
+      input{
+        height: 30px;
+      }
+      #rs{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table border="1px">
+        <caption>교재주문</caption>
+        <thead>
+          <tr>
+            <td>전공서적</td>
+            <td id=rs>가격</td>
+            <td>수량</td>
+            <td>합계</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>자바프로그래밍</td>
+            <td id=rs>34,000원</td>
+            <td>
+              <input type="number" value="0">
+            </td>
+            <td>
+              <input type="text" value="0" size="6">
+            </td>
+          </tr>
+          <tr>
+            <td>파이썬</td>
+            <td id=rs>9,500원</td>
+            <td>
+              <input type="number" value="0">
+            </td>
+            <td>
+              <input type="text" value="0" size="6">
+            </td>
+          </tr>
+          <tr>
+            <td>이산수학</td>
+            <td id=rs>12,000원</td>
+            <td>
+              <input type="number" value="0">
+            </td>
+            <td>
+              <input type="text" value="0" size="6">
+            </td>
+          </tr>
+          <tr>
+            <td>웹프로그래밍</td>
+            <td id=rs>50,000원</td>
+            <td>
+              <input type="number" value="0">
+            </td>
+            <td>
+              <input type="text" value="0" size="6">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <input type="button" value="계산">
+      <input type="submit" value="구매">
+      <input type="reset">
+    </form>
+    <br><br>
+    <a href="main.html" style="text-decoration: none;">메인페이지로 이동</a>
+  </body>
+</html>

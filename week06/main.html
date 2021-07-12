@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>관심사전</title>
+    <style>
+      body{
+        background-color: silver;
+      }
+      a{
+        text-decoration: none;
+      }
+      h2{
+        text-align: center;
+        visibility: hidden;
+        color:slateblue;
+        z-index: 1;
+        font: bold;
+        margin: 0;
+      }
+      #t{
+        width: 70%;
+        border: solid 3px cadetblue;
+      }
+      hr {
+        width: 100%;
+        border: solid 1px darkseagreen;
+      }
+      table{
+        width: 70%;
+        margin-left: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      tr{
+        border: 200px;
+      }
+      td{
+        width : 100%;
+        height: 150px;
+        opacity: 1;
+        background-size: 100% 100%;
+      }
+      td:hover h2{
+        visibility: visible;
+      }
+      td:hover img{
+        opacity: 0.5;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">관심 사전</h1>
+    <hr id="t">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <a href="game01.html">
+              <img src="image/play_game.jpg">
+              <h2>게임</h2>
+            </a>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="music01.html">
+              <img src="image/listen_music.jpg">
+              <h2>음악</h2>
+            </a>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="food01.html">
+              <img src="image/food.jpg">
+              <h2>음식</h2>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>addEventListener()를 이용한 리스너 등록</title>
+    
+  </head>
+  <body onload="init()">
+    <h3>addEventListener()를 이용한 리스너 등록</h3>
+    <hr>
+    <p id="p">마우스 올리면 orchid 색으로 변경</p>
+    <a href="http://www.js.com" onclick="return false">
+
+      js 사이트로 이동합니다.
+    
+    </a>
+    <hr>
+    <a href="http://www.js.com" onclick="event.preventDefault();">
+
+      js 사이트로 이동합니다.
+    
+    </a>
+    <hr>
+    <a href="http://www.js.com" onclick="return true">
+
+      js 사이트로 이동합니다.
+    
+    </a>
+    <hr>
+    <a href="http://www.js.com"   onclick="return query()">
+      js 사이트로 이동합니다. </a>
+    <hr>
+    <input type="checkbox"  onclick="noAction(event)"> 기대감
+    <script>
+      var p;
+      p = document.getElementById("p");
+      function over() {
+        p.style.backgroundColor="orchid";
+      }
+p.onmouseover = over();
+function query() {
+
+var ret = confirm("이동하시겠습니까?");
+
+return ret;   }
+function noAction(e) {
+
+e.preventDefault();
+
+}
+    </script>
+  </body>
+</html>

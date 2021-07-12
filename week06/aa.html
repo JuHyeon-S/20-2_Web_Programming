@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      function gugudan(){
+        var n = prompt("구구단 몇단을 원하세요","");
+        var m = parseInt(n);
+        if(isNaN(m) || m < 1 || m > 9){
+          alert("잘못입력하셨습니다.");
+          return;
+        }
+        for(var i = 0; i <= 9; i++){
+          document.write(m + "x" + i + "=" + m*i + "<br>");
+        }
+      }
+      gugudan();
+    </script>
+  </body>
+</html>

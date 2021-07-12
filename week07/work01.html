@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //＠☆★○
+            var ret = prompt("출력할 행의 수를 입력 하세요 : ");
+            ret = parseInt(ret);
+            var kiho = prompt("연속적으로 기호를 4개 입력하세요 : ", "");
+            for (var i = 0; i < ret; i++){
+                document.write(kiho[0]);
+            }
+            document.writeln("<br>");
+            for (var i = 0; i < ret-2; i++){
+                document.write(kiho[1]);
+                for(var j = 0; j < ret-2; j++){
+                    document.write("&nbsp&nbsp&nbsp");
+                }
+                document.write(kiho[2]);
+                document.writeln("<br>");
+            }
+            for (var i = 0; i < ret; i++){
+                document.write(kiho[3]);
+            }
+        </script>
+    </body>
+</html>
